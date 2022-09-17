@@ -196,7 +196,10 @@ input:focus, textarea:focus, select:focus{
 */
 /* 버튼 초기화 */
 button {
-    line-height: 1.2;
+    box-sizing: content-box;
+    border-radius: 56px;
+    border: none;
+    line-height: 1;
     font-family: 'GmarketSansBold';
     font-size: inherit;
     background-color: var(--btn-color);
@@ -205,7 +208,7 @@ button {
 }
 
 .computation-btn {
-    border: none;
+    line-height: 1.2;
     position: relative;
     padding: 1.9rem 0 1.7rem;
     width: 17.21em;
@@ -235,6 +238,26 @@ strong {
     /* 24/14 */
     font-size: 1.71em;
     font-family: 'GmarketSansBold';
+}
+
+/*
+///계산 결과 버튼///
+*/
+.studynshare {
+    /* (55/312)*100 */
+    margin-top: 17.63%;
+}
+
+.share {
+    background-color: #FFFFFF;
+}
+
+.study {
+    padding: 13.5px 17.5px 12.5px;
+}
+
+.share {
+    padding: 13.5px 19px 12.5px;
 }
 
 @media screen and (min-width: 590px) {
@@ -304,6 +327,15 @@ strong {
         /* 72/24 */
         font-size: 3em;
     }
+
+    .studynshare {
+        /* (127/765)*100 */
+        margin-top: 16.60%;
+    }
+
+    .study, .share {
+        padding: 21px 49px;
+    }
 }
 
 @media screen and (min-width: 590px) and (max-width: 769px) {
@@ -313,5 +345,12 @@ strong {
 
     strong {
         font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .computation-btn {
+        border-radius: 56px;
+        line-height: 1;
     }
 }
