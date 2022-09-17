@@ -143,6 +143,30 @@ dd {
     justify-content: space-between;
 }
 
+/*
+///계산 영역
+*/
+.time-computation {
+    margin-top: 62px;
+}
+
+.goal>span:nth-child(2) {
+    /* 17 / 14 = 1.21 */
+    margin: 1.21em 0 0;
+}
+
+.for-br {
+    display: block;
+}
+
+.mobile-br {
+    display: block;
+}
+
+.goal .mobile-br {
+    margin-top: 19px;
+}
+
 @media screen and (min-width: 590px) {
     body {
         font-size: 24px;
@@ -168,5 +192,24 @@ dd {
 
     dd {
         min-height: 85px;
+    }
+
+    .time-computation {
+        margin-top: 102px;
+    }
+
+    .mobile-br {
+        display: initial;
+        margin-top: 0;
+    }
+
+    .goal>span:nth-child(2) {
+        /* 27 / 24 = 1.125 */
+        margin: 1.125em 0 0;
+        line-height: 1.5;
+    }
+
+    .goal .mobile-br {
+        margin-top: 0;
     }
 }
