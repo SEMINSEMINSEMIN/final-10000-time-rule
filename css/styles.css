@@ -191,6 +191,40 @@ input:focus, textarea:focus, select:focus{
     outline: none;
 }
 
+/*
+///계산 영역의 버튼
+*/
+
+/* 버튼 초기화 */
+button {
+    line-height: 1.2;
+    font-family: 'GmarketSansBold';
+    font-size: inherit;
+    background-color: var(--btn-color);
+    color: var(--point-text-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.computation-btn {
+    border: none;
+    position: relative;
+    padding: 1.9rem 0 1.7rem;
+    width: 17.21em;
+    border-radius: 13px;
+    /* (49/312)*100=15.71 */
+    margin-top: 15.71%;
+}
+
+.click-img {
+    /* 43 / 14 = 3.07 */
+    width: 3.07em;
+    max-width: 64px;
+    position: absolute;
+    left: calc(100% + 6px);
+    bottom: -15%;
+}
+
+
 @media screen and (min-width: 590px) {
     body {
         font-size: 24px;
@@ -239,5 +273,19 @@ input:focus, textarea:focus, select:focus{
 
     input {
         padding: 17px 0 16px;
+    }
+
+    .computation-btn {
+        box-sizing: content-box;
+        width: initial;
+        padding: 21px 49px;
+        /* (127/765)*100=16.60 */
+        margin-top: 16.60%;
+    }
+}
+
+@media screen and (min-width: 590px) and (max-width: 769px) {
+    .click-img {
+        display: none;
     }
 }
