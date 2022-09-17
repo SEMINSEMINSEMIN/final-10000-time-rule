@@ -73,8 +73,9 @@ html {
 ///메인 코드///
 */
 body {
-    font-size: 1.4rem;
+    font-size: 3.89vw;
     background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     font-family: 'GmarketSansMedium';
     padding: 0 24px;
 }
@@ -119,7 +120,34 @@ q {
     color: var(--quote-color);
 }
 
+/*
+///1만 시간 법칙 설명///
+*/
+.for-br {
+    display: block;
+}
+
+dl {
+    font-size: 14px;
+    margin-top: 61px;
+}
+
+dfn {
+    font-family: 'GmarketSansBold';
+}
+
+dd {
+    min-height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 590px) {
+    body {
+        font-size: 24px;
+    }
+
     h1 {
         margin-top: 15.69%;
     }
@@ -127,5 +155,18 @@ q {
     q {
         font-size: 36px;
         margin-top: 46px;
+    }
+
+    dl {
+        margin-top: 78px;
+        font-size: 18px;
+    }
+
+    dfn {
+        font-size: 24px;
+    }
+
+    dd {
+        min-height: 85px;
     }
 }
