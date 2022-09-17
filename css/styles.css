@@ -144,7 +144,7 @@ dd {
 }
 
 /*
-///계산 영역
+///계산 영역///
 */
 .time-computation {
     margin-top: 62px;
@@ -192,9 +192,8 @@ input:focus, textarea:focus, select:focus{
 }
 
 /*
-///계산 영역의 버튼
+///계산 영역의 버튼///
 */
-
 /* 버튼 초기화 */
 button {
     line-height: 1.2;
@@ -224,6 +223,19 @@ button {
     bottom: -15%;
 }
 
+/*
+///계산 결과 영역///
+*/
+.computation-result {
+    /* (64/312)*100=20.51 */
+    margin-top: 20.51%;
+}
+
+strong {
+    /* 24/14 */
+    font-size: 1.71em;
+    font-family: 'GmarketSansBold';
+}
 
 @media screen and (min-width: 590px) {
     body {
@@ -282,10 +294,24 @@ button {
         /* (127/765)*100=16.60 */
         margin-top: 16.60%;
     }
+
+    .computation-result {
+        /* (147/765)*100=19.22 */
+        margin-top: 19.22%;
+    }
+
+    strong {
+        /* 72/24 */
+        font-size: 3em;
+    }
 }
 
 @media screen and (min-width: 590px) and (max-width: 769px) {
     .click-img {
         display: none;
+    }
+
+    strong {
+        font-size: 2em;
     }
 }
