@@ -167,6 +167,30 @@ dd {
     margin-top: 19px;
 }
 
+input {
+    line-height: 1;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    /* 156 / 14 = 11.14 */
+    width: 11.14em;
+    height: 1em;
+    max-width: 228px;
+    padding: 12px 0 11px;
+    border: none;
+    border-radius: 7px;
+    color: var(--point-text-color);
+    text-align: center;
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
 @media screen and (min-width: 590px) {
     body {
         font-size: 24px;
@@ -206,10 +230,14 @@ dd {
     .goal>span:nth-child(2) {
         /* 27 / 24 = 1.125 */
         margin: 1.125em 0 0;
-        line-height: 1.5;
+        line-height: 2;
     }
 
     .goal .mobile-br {
         margin-top: 0;
+    }
+
+    input {
+        padding: 17px 0 16px;
     }
 }
