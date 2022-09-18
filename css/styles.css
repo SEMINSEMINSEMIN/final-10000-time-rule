@@ -325,6 +325,12 @@ footer {
     width: 54.125%;
 }
 
+.go-btn {
+    border-radius: 13px;
+    padding: 19px 45px 17px;
+    line-height: 1.2;
+}
+
 @media screen and (min-width: 590px) {
     body {
         font-size: 24px;
@@ -436,6 +442,15 @@ footer {
         margin: initial;
         overflow: initial;
     }
+
+    .go-btn {
+        padding: 21px 49px;
+    }
+
+    .computation-btn, .go-btn {
+        border-radius: 56px;
+        line-height: 1;
+    }
 }
 
 @media screen and (min-width: 590px) and (max-width: 769px) {
@@ -445,13 +460,6 @@ footer {
 
     strong {
         font-size: 2em;
-    }
-}
-
-@media screen and (min-width: 610px) {
-    .computation-btn {
-        border-radius: 56px;
-        line-height: 1;
     }
 }
 
