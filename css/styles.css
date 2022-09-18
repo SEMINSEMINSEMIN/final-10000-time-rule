@@ -254,6 +254,7 @@ strong {
 
 .study {
     padding: 13.5px 17.5px 12.5px;
+    margin-right: 13px;
 }
 
 .share {
@@ -355,6 +356,10 @@ footer {
 
     .study, .share {
         padding: 21px 49px;
+    }
+
+    .study {
+        margin-right: 18px;
     }
 
     footer {
