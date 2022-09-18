@@ -267,6 +267,8 @@ strong {
 footer {
     /* (83/312)*100 */
     margin-top: 26.60%;
+    /* (32/312)*100 */
+    margin-bottom: 10.26%;
 }
 
 .footer-img {
@@ -365,6 +367,7 @@ footer {
     footer {
         /* (127/765)*100 */
         margin-top: 16.60%;
+        margin-bottom: 70px;
     }
 
     .copyright {
@@ -387,5 +390,11 @@ footer {
     .computation-btn {
         border-radius: 56px;
         line-height: 1;
+    }
+}
+
+@media screen and (max-width: 339px) {
+    body {
+        padding: 0 10px;
     }
 }
