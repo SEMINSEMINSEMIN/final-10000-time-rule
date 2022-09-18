@@ -289,13 +289,14 @@ footer {
 */
 .modal {
     /* 330/360=91.67% */
+    background-color: white;
     width: 91.67vw;
     max-width: 800px;
-    background-color: #FCEE21;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     margin: 0 auto;
     text-align: center;
+    padding: 40px 0;
 }
 
 .cheer-up {
@@ -450,6 +451,10 @@ footer {
     .computation-btn, .go-btn {
         border-radius: 56px;
         line-height: 1;
+    }
+
+    .modal {
+        padding: 76px 0 68px;
     }
 }
 
