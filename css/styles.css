@@ -324,6 +324,7 @@ footer {
 .licat-img {
     /* 433/800 */
     width: 54.125%;
+    margin: 29px 0;
 }
 
 .go-btn {
@@ -455,6 +456,10 @@ footer {
 
     .modal {
         padding: 76px 0 68px;
+    }
+
+    .licat-img {
+        margin-bottom: 74px;
     }
 }
 
