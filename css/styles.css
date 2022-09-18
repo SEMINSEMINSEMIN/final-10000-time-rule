@@ -77,12 +77,13 @@ body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: 'GmarketSansMedium';
-    padding: 0 24px;
+    /* padding: 0 24px; */
 }
 
 main, footer {
     max-width: 765px;
     text-align: center;
+    padding: 0 24px;
     margin: 0 auto;
 }
 
@@ -283,6 +284,19 @@ footer {
     line-height: normal;
 }
 
+/*
+///모달///
+*/
+.modal {
+    /* 330/312=105.77% */
+    width: 105.77%;
+    max-width: 800px;
+    background-color: #FCEE21;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 590px) {
     body {
         font-size: 24px;
@@ -394,7 +408,7 @@ footer {
 }
 
 @media screen and (max-width: 339px) {
-    body {
+    main, footer {
         padding: 0 10px;
     }
 }
