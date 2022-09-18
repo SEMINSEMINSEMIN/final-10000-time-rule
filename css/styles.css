@@ -320,11 +320,18 @@ footer {
     overflow: hidden;
 }
 
-
+.licat-img {
+    /* 433/800 */
+    width: 54.125%;
+}
 
 @media screen and (min-width: 590px) {
     body {
         font-size: 24px;
+    }
+
+    main, footer {
+        padding: 0 10px;
     }
 
     h1 {
@@ -376,13 +383,13 @@ footer {
         box-sizing: content-box;
         width: initial;
         padding: 21px 49px;
-        /* (115/765)*100=15.03 */
-        margin-top: 15.03%;
+        /* (115/745)*100=15.44 */
+        margin-top: 15.44%;
     }
 
     .computation-result {
-        /* (147/765)*100=19.22 */
-        margin-top: 19.22%;
+        /* (147/745)*100=19.73 */
+        margin-top: 19.73%;
     }
 
     strong {
@@ -391,8 +398,8 @@ footer {
     }
 
     .studynshare {
-        /* (127/765)*100 */
-        margin-top: 16.60%;
+        /* (127/745)*100 */
+        margin-top: 17.05%;
     }
 
     .study, .share {
@@ -428,10 +435,6 @@ footer {
         height: initial;
         margin: initial;
         overflow: initial;
-    }
-
-    main, footer {
-        padding: 0;
     }
 }
 
