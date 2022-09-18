@@ -288,8 +288,8 @@ footer {
 ///모달///
 */
 .modal {
-    /* 330/312=105.77% */
-    width: 105.77%;
+    /* 330/360=91.67% */
+    width: 91.67vw;
     max-width: 800px;
     background-color: #FCEE21;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
