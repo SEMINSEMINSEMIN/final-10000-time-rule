@@ -205,16 +205,23 @@ dd:after {
 ///계산 영역///
 */
 .time-computation {
-    margin-top: 62px;
+    margin-top: 66px;
+}
+
+@media (min-width: 610px) {
+    .time-computation {
+        margin-top: 102px;
+    }
 }
 
 .goal>span:nth-child(2) {
-    /* 17 / 14 = 1.21 */
-    margin: 1.21em 0 0;
+    margin: 17px 0 0;
 }
 
-.for-br {
-    display: block;
+@media (min-width: 610px) {
+    .goal>span:nth-child(2) {
+        margin-top: 27px;
+    }
 }
 
 .mobile-br {
@@ -230,8 +237,7 @@ input {
     box-sizing: content-box;
     font-family: inherit;
     font-size: inherit;
-    /* 156 / 14 = 11.14 */
-    width: 11.14em;
+    width: calc(156 / 14 * 1em);
     height: 1em;
     max-width: 228px;
     padding: 12px 0 11px;
@@ -254,7 +260,6 @@ input:focus, textarea:focus, select:focus{
 */
 /* 버튼 초기화 */
 button {
-    box-sizing: content-box;
     border-radius: 56px;
     border: none;
     line-height: 1;
@@ -266,18 +271,35 @@ button {
 }
 
 .computation-btn {
-    line-height: 1.2;
     position: relative;
+    left: -4px;
     padding: 1.9rem 0 1.7rem;
-    width: 17.21em;
+    width: calc(241 / 360 * 100%);
     border-radius: 13px;
-    /* (49/312)*100=15.71 */
-    margin-top: 15.71%;
+    margin-top: 49px;
+    line-height: 16px;
+}
+
+@media (min-width: 610px) {
+    .mobile-br {
+        display: inline;
+    }
+    
+    .computation-btn {
+        margin-top: 136px;
+    }
+
+    .computation-btn, .go-btn {
+        border-radius: 56px;
+    }
+
+    .for-br {
+        line-height: 1.5;
+    }
 }
 
 .click-img {
-    /* 43 / 14 = 3.07 */
-    width: 3.07em;
+    width: calc(43 / 14 * 1em);
     max-width: 64px;
     position: absolute;
     left: calc(100% + 6px);
@@ -288,45 +310,67 @@ button {
 ///계산 결과 영역///
 */
 .computation-result {
-    /* (64/312)*100=20.51 */
-    margin-top: 20.51%;
+    margin-top: 64px;
 }
 
 strong {
-    /* 24/14 */
-    font-size: 1.71em;
+    vertical-align: middle;
+}
+
+@media (min-width: 610px) {
+    .computation-result {
+        margin-top: 147px;
+    }
+
+    .computation-btn, .go-btn {
+        border-radius: 56px;
+        line-height: 1;
+    }
+}
+
+strong {
+    font-size: calc(24 / 14 * 1em);
     font-family: 'GmarketSansBold';
+    margin: 0 5px;
 }
 
 /*
 ///계산 결과 버튼///
 */
-.studynshare {
-    /* (55/312)*100 */
-    margin-top: 17.63%;
-}
 
 .share {
+    margin-top: 55px;
     background-color: #FFFFFF;
 }
 
 .study {
+    position: relative;
+    left: -9px;
+    margin-top: 55px;
     padding: 13.5px 17.5px 12.5px;
-    margin-right: 13px;
 }
 
 .share {
     padding: 13.5px 19px 12.5px;
 }
 
+.computation-result .for-br {
+    margin-top: 15px;
+}
+
 /*
 ///footer///
 */
 footer {
-    /* (83/360)*100 */
-    margin-top: 23.06%;
-    /* (32/360)*100 */
-    margin-bottom: 8.89%;
+    margin-top: 83px;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 610px) {
+    footer {
+        margin-top: 130px;
+        margin-bottom: 70px;
+    }
 }
 
 .footer-img {
@@ -345,9 +389,8 @@ footer {
 ///모달///
 */
 .modal {
-    /* 330/360=91.67% */
     background-color: white;
-    width: 91.67vw;
+    width: calc(330 / 360 * 100%);
     max-width: 800px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
@@ -359,14 +402,11 @@ footer {
 .cheer-up {
     font-family: 'OTEnjoystoriesBA';
     color: var(--point-text-color);
-    /* 36/14 */
-    font-size: 2.57em;
-    text-align: center;
+    font-size: calc(36 / 14 * 1em);
 }
 
 .bigger {
-    /* 64/14 */
-    font-size: 1.78em;
+    font-size: calc(64 / 36 * 1em);
 }
 
 .mobile-blind {
@@ -379,13 +419,19 @@ footer {
 }
 
 .licat-img {
-    /* 433/800 */
-    width: 54.125%;
-    margin: 29px 0;
+    width: calc(433 / 800 * 100%);
+    margin: 29px auto;
+    display: block;
 }
 
 .go-btn {
     border-radius: 13px;
     padding: 19px 45px 17px;
-    line-height: 1.2;
+}
+
+@media (min-width: 610px) {
+    .go-btn {
+        border-radius: 56px;
+        line-height: 1;
+    }
 }
