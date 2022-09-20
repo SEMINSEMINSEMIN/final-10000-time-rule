@@ -45,3 +45,34 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+///색상 설정///
+*/
+:root {
+    --main-bg-color: #5B2386;
+    --main-text-color: #FFFFFF;
+    --point-text-color: #5B2386;
+    --quote-color: #F5DF4D;
+    --btn-color: #FCEE21;
+    --placeholder-color: #BABCBE;
+}
+
+/* 
+///요소 숨김/// 
+*/
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* 
+///이미지 깨짐 문제/// 
+*/
+img {
+    transform: translateZ(0);
+}

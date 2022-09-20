@@ -32,44 +32,6 @@
 }
 
 /*
-///색상 설정///
-*/
-:root {
-    --main-bg-color: #5B2386;
-    --main-text-color: #FFFFFF;
-    --point-text-color: #5B2386;
-    --quote-color: #F5DF4D;
-    --btn-color: #FCEE21;
-    --placeholder-color: #BABCBE;
-}
-
-/* 
-///요소 숨김/// 
-*/
-.blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-}
-
-/* 
-///이미지 깨짐 문제/// 
-*/
-img {
-    transform: translateZ(0);
-}
-
-/*
-///계산 편리함을 위해 글꼴 10px로 설정///
-*/
-html {
-    font-size: 10px;
-}
-
-/*
 ///메인 코드///
 */
 body {
