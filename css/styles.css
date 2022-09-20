@@ -74,12 +74,6 @@ main, footer {
     margin: 0 auto;
 }
 
-@media (min-width: 610px) {
-    main, footer {
-        padding: 0 10px;
-    }
-}
-
 /*
 ///h1///
 */
@@ -94,12 +88,6 @@ h1 {
     background-size: contain;
 }
 
-@media (min-width: 610px) {
-    h1 {
-        margin-top: 12rem;
-    }
-}
-
 .title-img {
     position: absolute;
     top: calc(35 / 126 * 100%);
@@ -107,12 +95,6 @@ h1 {
     transform: translateX(-50%);
     width: calc(267 / 360 * 100%);
     max-width: 564px;
-}
-
-@media (min-width: 1000px) {
-    main .title-img {
-        top: 74px;
-    }
 }
 
 /*
@@ -126,19 +108,6 @@ q {
     margin-top: 31px;
     display: block;
     color: var(--quote-color);
-}
-
-@media (min-width: 590px) {
-    q {
-        font-size: 36px;
-        line-height: 40px;
-    }
-}
-
-@media (min-width: 610px) {
-    q {        
-        margin-top: 46px;
-    }
 }
 
 /*
@@ -181,26 +150,6 @@ dd:after {
     max-height: 96px;
 }
 
-@media (min-width: 480px) {
-    main dl {
-        font-size: 1.8rem;
-    }
-}
-
-@media (min-width: 610px) {
-    main dfn {
-        font-size: 2.4rem;
-    }
-
-    main dl {
-        margin-top: 78px;
-    }
-
-    main dd {
-        gap: 0.8em;
-    }
-}
-
 /*
 ///계산 영역///
 */
@@ -208,20 +157,8 @@ dd:after {
     margin-top: 66px;
 }
 
-@media (min-width: 610px) {
-    .time-computation {
-        margin-top: 102px;
-    }
-}
-
 .goal>span:nth-child(2) {
     margin: 17px 0 0;
-}
-
-@media (min-width: 610px) {
-    .goal>span:nth-child(2) {
-        margin-top: 27px;
-    }
 }
 
 .mobile-br {
@@ -276,35 +213,29 @@ button {
     padding: 1.9rem 0 1.7rem;
     width: calc(241 / 360 * 100%);
     border-radius: 13px;
-    margin-top: 49px;
-    line-height: 16px;
+    margin-top: 50px;
+    line-height: 1.1;
 }
 
-@media (min-width: 610px) {
-    .mobile-br {
-        display: inline;
-    }
-    
-    .computation-btn {
-        margin-top: 136px;
-    }
-
-    .computation-btn, .go-btn {
-        border-radius: 56px;
-    }
-
-    .for-br {
-        line-height: 1.5;
-    }
+.computation-btn::after {
+    content: '';
+    position: absolute;
+    left: calc(100% + 6px);
+    bottom: -15%;
+    width: 43px;
+    height: 48px;
+    background-image: url(../img/click.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.click-img {
+/* .click-img {
     width: calc(43 / 14 * 1em);
     max-width: 64px;
     position: absolute;
     left: calc(100% + 6px);
     bottom: -15%;
-}
+} */
 
 /*
 ///계산 결과 영역///
@@ -317,17 +248,6 @@ strong {
     vertical-align: middle;
 }
 
-@media (min-width: 610px) {
-    .computation-result {
-        margin-top: 147px;
-    }
-
-    .computation-btn, .go-btn {
-        border-radius: 56px;
-        line-height: 1;
-    }
-}
-
 strong {
     font-size: calc(24 / 14 * 1em);
     font-family: 'GmarketSansBold';
@@ -337,7 +257,6 @@ strong {
 /*
 ///계산 결과 버튼///
 */
-
 .share {
     margin-top: 55px;
     background-color: #FFFFFF;
@@ -364,13 +283,6 @@ strong {
 footer {
     margin-top: 83px;
     margin-bottom: 32px;
-}
-
-@media (min-width: 610px) {
-    footer {
-        margin-top: 130px;
-        margin-bottom: 70px;
-    }
 }
 
 .footer-img {
@@ -427,11 +339,4 @@ footer {
 .go-btn {
     border-radius: 13px;
     padding: 19px 45px 17px;
-}
-
-@media (min-width: 610px) {
-    .go-btn {
-        border-radius: 56px;
-        line-height: 1;
-    }
 }

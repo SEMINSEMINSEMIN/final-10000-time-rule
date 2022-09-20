@@ -1,0 +1,132 @@
+@media (min-width: 460px) {
+    dl {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 590px) {
+    q {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 610px) {
+    main, footer {
+        padding: 0 10px;
+    }
+
+    h1 {
+        margin-top: 12rem;
+    }
+
+    q {        
+        margin-top: 46px;
+    }
+
+    dfn {
+        font-size: 2.4rem;
+    }
+
+    dl {
+        margin-top: 78px;
+    }
+
+    dd {
+        gap: 0.8em;
+    }
+
+    .time-computation {
+        margin-top: 102px;
+    }
+
+    .goal>span:nth-child(2) {
+        margin-top: 27px;
+    }
+
+    .mobile-br {
+        display: inline;
+    }
+    
+    .computation-btn {
+        width: auto;
+        margin-top: 115px;
+    }
+
+    .computation-btn, .go-btn {
+        border-radius: 56px;
+        padding: 21px 49px;
+    }
+
+    .for-br {
+        line-height: 1.5;
+    }
+
+    .computation-result {
+        margin-top: 147px;
+    }
+
+    .computation-btn, .go-btn {
+        border-radius: 56px;
+        line-height: 1;
+    }
+
+    footer {
+        margin-top: 130px;
+        margin-bottom: 70px;
+    }
+
+    .go-btn {
+        border-radius: 56px;
+        line-height: 1;
+    }
+
+    .study {
+        left: -18px;
+    }
+
+    .modal {
+        padding: 76px 0 68px;
+        line-height: 40px;
+    }
+
+    .licat-img {
+        margin: 29px auto 74px;
+    }
+
+    .mobile-blind {
+        position: initial;
+        clip: initial;
+        width: initial;
+        height: initial;
+        margin: initial;
+        overflow: initial;
+    }
+
+    .bigger {
+        font-size: 9.6rem;
+        line-height: 106px;
+    }
+
+    .cheer-up {
+        font-size: 3.6rem;
+    }
+
+    .study, .share {
+        margin-top: 127px;
+    }
+
+    .txt-wannabe strong {
+        font-size: 72px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    main .title-img {
+        top: 74px;
+    }
+}
