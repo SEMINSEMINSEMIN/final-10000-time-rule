@@ -71,14 +71,19 @@ body {
 main, footer {
     max-width: 765px;
     text-align: center;
-    padding: 0 24px;
     margin: 0 auto;
+}
+
+@media (min-width: 610px) {
+    main, footer {
+        padding: 0 10px;
+    }
 }
 
 /*
 ///h1///
 */
-main h1 {
+h1 {
     margin-top: 41px;
     position: relative;
     height: calc(126 / 3.6 * 1vw);
@@ -90,17 +95,17 @@ main h1 {
 }
 
 @media (min-width: 610px) {
-    main h1 {
+    h1 {
         margin-top: 12rem;
     }
 }
 
-main .title-img {
+.title-img {
     position: absolute;
     top: calc(35 / 126 * 100%);
     left: 50%;
     transform: translateX(-50%);
-    width: calc(267 / 312 * 100%);
+    width: calc(267 / 360 * 100%);
     max-width: 564px;
 }
 
@@ -113,7 +118,7 @@ main .title-img {
 /*
 ///인용문///
 */
-main q {
+q {
     font-family: 'OTEnjoystoriesBA';
     font-size: calc(22 / 14 * 1em);
     font-weight: 700;
@@ -124,14 +129,14 @@ main q {
 }
 
 @media (min-width: 590px) {
-    main q {
+    q {
         font-size: 36px;
         line-height: 40px;
     }
 }
 
 @media (min-width: 610px) {
-    main q {        
+    q {        
         margin-top: 46px;
     }
 }
@@ -144,8 +149,8 @@ main q {
 }
 
 dl {
-    font-size: 14px;
-    margin-top: 61px;
+    margin-top: 62px;
+    position: relative;
 }
 
 dfn {
@@ -153,10 +158,47 @@ dfn {
 }
 
 dd {
-    min-height: 68px;
+    position: relative;
+    gap: 13px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+dd:after {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url('../img/quotes.png');
+    background-size: 100% auto;
+    margin: 0 auto;
+    display: block;
+    width: calc(302 / 360 * 100%);
+    max-width: 493px;
+    height: calc(48 / 3.6 * 1vw);
+    max-height: 96px;
+}
+
+@media (min-width: 480px) {
+    main dl {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 610px) {
+    main dfn {
+        font-size: 2.4rem;
+    }
+
+    main dl {
+        margin-top: 78px;
+    }
+
+    main dd {
+        gap: 0.8em;
+    }
 }
 
 /*
@@ -346,152 +388,4 @@ footer {
     border-radius: 13px;
     padding: 19px 45px 17px;
     line-height: 1.2;
-}
-
-@media screen and (min-width: 590px) {
-    body {
-        font-size: 24px;
-    }
-
-    main, footer {
-        padding: 0 10px;
-    }
-
-    q {
-        font-size: 36px;
-        margin-top: 46px;
-    }
-
-    dl {
-        margin-top: 78px;
-        font-size: 18px;
-    }
-
-    dfn {
-        font-size: 24px;
-    }
-
-    dd {
-        min-height: 85px;
-    }
-
-    .time-computation {
-        margin-top: 102px;
-    }
-
-    .mobile-br {
-        display: initial;
-        margin-top: 0;
-    }
-
-    .goal>span:nth-child(2) {
-        /* 27 / 24 = 1.125 */
-        margin: 1.125em 0 0;
-        line-height: 2;
-    }
-
-    .goal .mobile-br {
-        margin-top: 0;
-    }
-
-    input {
-        padding: 17px 0 16px;
-    }
-
-    .computation-btn {
-        box-sizing: content-box;
-        width: initial;
-        padding: 21px 49px;
-        /* (115/745)*100=15.44 */
-        margin-top: 15.44%;
-    }
-
-    .computation-result {
-        /* (147/745)*100=19.73 */
-        margin-top: 19.73%;
-    }
-
-    strong {
-        /* 72/24 */
-        font-size: 3em;
-    }
-
-    .studynshare {
-        /* (127/745)*100 */
-        margin-top: 17.05%;
-    }
-
-    .study, .share {
-        padding: 21px 49px;
-    }
-
-    .study {
-        margin-right: 18px;
-    }
-
-    footer {
-        margin-top: 130px;
-        margin-bottom: 70px;
-    }
-
-    .copyright {
-        font-size: 1.2rem;
-        margin-top: 20px;
-    }
-
-    .cheer-up {
-        font-size: 36px;
-    }
-    
-    .bigger {
-        font-size: 96px;
-    }
-
-    .mobile-blind {
-        position: initial;
-        clip: initial;
-        width: initial;
-        height: initial;
-        margin: initial;
-        overflow: initial;
-    }
-
-    .go-btn {
-        padding: 21px 49px;
-    }
-
-    .computation-btn, .go-btn {
-        border-radius: 56px;
-        line-height: 1;
-    }
-
-    .modal {
-        padding: 76px 0 68px;
-    }
-
-    .licat-img {
-        margin-bottom: 74px;
-    }
-}
-
-@media screen and (min-width: 590px) and (max-width: 769px) {
-    .click-img {
-        display: none;
-    }
-
-    strong {
-        font-size: 2em;
-    }
-}
-
-@media screen and (max-width: 339px) {
-    main, footer {
-        padding: 0 10px;
-    }
-}
-
-@media screen and (min-width: 590px) and (max-width: 617px) {
-    .share {
-        margin-top: 20px;
-    }
 }
