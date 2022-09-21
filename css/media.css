@@ -1,13 +1,13 @@
 @media (min-width: 460px) {
     dl {
         font-size: 1.8rem;
+        height: 85px;
     }
 }
 
 @media (min-width: 590px) {
     q {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 3.6rem;
     }
 }
 
@@ -17,11 +17,12 @@
     }
 
     h1 {
-        margin-top: 12rem;
+        margin-top: 120px;
     }
 
     q {        
         margin-top: 46px;
+        height: 40px;
     }
 
     dfn {
@@ -32,43 +33,50 @@
         margin-top: 78px;
     }
 
-    dd {
-        gap: 0.8em;
+    dd::after {
+        top: 15%;
     }
 
     .time-computation {
         margin-top: 102px;
     }
 
-    .goal>span:nth-child(2) {
+    .goal>.for-br:nth-child(2) {
         margin-top: 27px;
+        line-height: 1.5;
     }
 
     .mobile-br {
         display: inline;
     }
+
+    input {
+        padding: 17px 0 16px;
+    }
     
     .computation-btn {
-        width: auto;
+        /* width: auto; */
         margin-top: 115px;
-    }
-
-    .computation-btn, .go-btn {
-        border-radius: 56px;
         padding: 21px 49px;
     }
 
-    .for-br {
-        line-height: 1.5;
+    .computation-btn::after {
+        left: calc(100% + 7px);
+        bottom: -30%;
+        width: 64px;
+        height: 72px;
+    }
+
+    .go-btn {
+        padding: 21px 49px;
     }
 
     .computation-result {
         margin-top: 147px;
     }
 
-    .computation-btn, .go-btn {
-        border-radius: 56px;
-        line-height: 1;
+    .txt-wannabe .for-br {
+        margin-top: 17px;
     }
 
     footer {
@@ -79,6 +87,7 @@
     .go-btn {
         border-radius: 56px;
         line-height: 1;
+        width: 508px;
     }
 
     .study {
@@ -105,7 +114,7 @@
 
     .bigger {
         font-size: 9.6rem;
-        line-height: 106px;
+        line-height: 10.6rem;
     }
 
     .cheer-up {
@@ -117,16 +126,43 @@
     }
 
     .txt-wannabe strong {
-        font-size: 72px;
+        font-size: 7.2rem;
     }
 
     .copyright {
         margin-top: 20px;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+}
+
+@media (min-width: 720px) {
+    .computation-btn {
+        border-radius: 56px;
+        width: auto;
     }
 }
 
 @media (min-width: 1000px) {
-    main .title-img {
+    .title-img {
         top: 74px;
+        width: 564px;
+    }
+
+    .computation-btn {
+        width: 565px;
+    }
+
+    .share, .study {
+        padding: 21px 49px;
+    }
+
+    .share {
+        width: 191px;
+    }
+
+    .study {
+        width: 356px;
+        left: -18px;
     }
 }

@@ -38,6 +38,7 @@ html {
     font-size: 10px;
 }
 /* 가로 너비기준 폰트사이즈 지정 */
+/* main, footer, article의 폰트 사이즈는 vw에 비례해 증가했으면 함 */
 .vw-font-size {
     font-size: calc(14 / 3.6 * 1vw);
 }
@@ -78,10 +79,12 @@ main, footer {
 ///h1///
 */
 h1 {
-    margin-top: 41px;
-    position: relative;
+    /* 백그라운드 이미지 때문에 height 지정함 */
+    /* vw에 따라 height가 커지도록 */
     height: calc(126 / 3.6 * 1vw);
     max-height: 265px;
+    margin-top: 41px;
+    position: relative;
     background-image: url(../img/clock.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -90,11 +93,12 @@ h1 {
 
 .title-img {
     position: absolute;
+    /* h1의 높이가 증가함에 따라 로고 이미지의 위치도 점점 내려가도록 */
     top: calc(35 / 126 * 100%);
     left: 50%;
     transform: translateX(-50%);
+    /* h1의 너비가 증가함에 따라 로고 이미지의 너비도 증가하도록 */
     width: calc(267 / 360 * 100%);
-    max-width: 564px;
 }
 
 /*
@@ -102,9 +106,9 @@ h1 {
 */
 q {
     font-family: 'OTEnjoystoriesBA';
+    /* 폰트 사이즈가 늘어남에 따라 함께 늘어나도록 */
     font-size: calc(22 / 14 * 1em);
     font-weight: 700;
-    line-height: calc(1em + 2px);
     margin-top: 31px;
     display: block;
     color: var(--quote-color);
@@ -118,8 +122,7 @@ q {
 }
 
 dl {
-    margin-top: 62px;
-    position: relative;
+    margin-top: 64px;
 }
 
 dfn {
@@ -133,7 +136,7 @@ dd {
     flex-direction: column;
 }
 
-dd:after {
+dd::after {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -157,8 +160,8 @@ dd:after {
     margin-top: 66px;
 }
 
-.goal>span:nth-child(2) {
-    margin: 17px 0 0;
+.goal>.for-br:nth-child(2) {
+    margin-top: 17px;
 }
 
 .mobile-br {
@@ -170,12 +173,12 @@ dd:after {
 }
 
 input {
-    line-height: 1;
     box-sizing: content-box;
     font-family: inherit;
     font-size: inherit;
     width: calc(156 / 14 * 1em);
     height: 1em;
+    line-height: 1;
     max-width: 228px;
     padding: 12px 0 11px;
     border: none;
@@ -197,6 +200,8 @@ input:focus, textarea:focus, select:focus{
 */
 /* 버튼 초기화 */
 button {
+    display: block;
+    margin: 0 auto;
     border-radius: 56px;
     border: none;
     line-height: 1;
@@ -210,11 +215,15 @@ button {
 .computation-btn {
     position: relative;
     left: -4px;
-    padding: 1.9rem 0 1.7rem;
+    padding: 19px 0 17px;
     width: calc(241 / 360 * 100%);
     border-radius: 13px;
-    margin-top: 50px;
-    line-height: 1.1;
+    margin-top: 49px;
+    /* line-height: 1.1; */
+}
+
+.computation-btn .mobile-br, .modal .mobile-br {
+    margin-top: 4px;
 }
 
 .computation-btn::after {
@@ -229,19 +238,11 @@ button {
     background-size: cover;
 }
 
-/* .click-img {
-    width: calc(43 / 14 * 1em);
-    max-width: 64px;
-    position: absolute;
-    left: calc(100% + 6px);
-    bottom: -15%;
-} */
-
 /*
 ///계산 결과 영역///
 */
 .computation-result {
-    margin-top: 64px;
+    margin-top: 65px;
 }
 
 strong {
@@ -257,6 +258,10 @@ strong {
 /*
 ///계산 결과 버튼///
 */
+.share, .study {
+    display: initial;
+}
+
 .share {
     margin-top: 55px;
     background-color: #FFFFFF;
@@ -264,13 +269,15 @@ strong {
 
 .study {
     position: relative;
-    left: -9px;
+    left: -8px;
     margin-top: 55px;
     padding: 13.5px 17.5px 12.5px;
 }
 
 .share {
     padding: 13.5px 19px 12.5px;
+    position: relative;
+    left: 1px;
 }
 
 .computation-result .for-br {
@@ -286,15 +293,14 @@ footer {
 }
 
 .footer-img {
-    /* 91/3.6 */
-    width: 25.27vw;
+    width: calc(91 / 3.6 * 1vw);
     max-width: 125px;
 }
 
 .copyright {
     font-size: 0.9rem;
     margin-top: 17px;
-    line-height: normal;
+    line-height: 1.3rem;
 }
 
 /*
