@@ -8,12 +8,16 @@ const practiceHourResStr = resultArea.querySelector('#cmptResult');
 const inputObj = {};
 let calRes;
 cptBtn.addEventListener('click', (event) => {
-    inputObj['specialty'] = specialtyStr.value;
-    inputObj['practiceHour'] = parseInt(practiceHourStr.value);
-    calRes = Math.ceil(10000 / inputObj['practiceHour']);
-    specialtyResStr.textContent = inputObj['specialty'];
-    practiceHourResStr.textContent = calRes;
-    resultArea.classList.add('show');
+    if (specialtyStr.value === '' || practiceHourStr.value === ''){
+        window.alert('입력값을 모두 입력하세요');
+    } else {
+        inputObj['specialty'] = specialtyStr.value;
+        inputObj['practiceHour'] = parseInt(practiceHourStr.value);
+        calRes = Math.ceil(10000 / inputObj['practiceHour']);
+        specialtyResStr.textContent = inputObj['specialty'];
+        practiceHourResStr.textContent = calRes;
+        resultArea.classList.add('show');
+    }
 });
 
 const modalShowBtn = resultArea.querySelector("#modalShowBtn");
