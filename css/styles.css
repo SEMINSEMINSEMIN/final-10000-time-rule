@@ -375,16 +375,16 @@ footer {
     display: none;
 }
 
-.result_loading {
-    /* display: none; */
-}
-
 .result_loading img {
+    /* position: absolute;
+    top: 20px;
+    left: 50%; */
     width: 100px;
     height: 100px;
+    /* transform: translateX(-50%); */
     transform-origin: center;
     animation-name: circleRotate;
     animation-duration: 1.3s;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
     animation-timing-function: linear;
 }

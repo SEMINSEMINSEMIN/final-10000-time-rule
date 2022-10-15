@@ -4,6 +4,7 @@ const cptBtn = document.querySelector('.computation-btn');
 const resultArea = document.querySelector('.computation-result');
 const specialtyResStr = resultArea.querySelector('#specialtyResult');
 const practiceHourResStr = resultArea.querySelector('#cmptResult');
+const loadingArea = document.querySelector('.result_loading')
 
 const inputObj = {};
 let calRes;
@@ -18,7 +19,13 @@ cptBtn.addEventListener('click', (event) => {
         calRes = Math.ceil(10000 / inputObj['practiceHour']);
         specialtyResStr.textContent = inputObj['specialty'];
         practiceHourResStr.textContent = calRes;
-        resultArea.classList.add('show');
+
+        loadingArea.classList.remove('hide');
+
+        setTimeout(() => {
+            loadingArea.classList.add('hide');
+            resultArea.classList.add('show');
+        }, 1300)
     }
 });
 
