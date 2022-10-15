@@ -36,6 +36,10 @@ modalShowBtn.addEventListener('click', (event) => {
     modalCont.classList.remove('hide');
 })
 
+window.addEventListener('click', (e) => {
+    e.target === modalCont ? modalCont.classList.add('hide') : false;
+})
+
 const shareBtn = resultArea.querySelector("#shareBtn");
 shareBtn.addEventListener('click', (event) => {
     if (window.navigator.share) {
