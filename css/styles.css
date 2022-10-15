@@ -375,6 +375,10 @@ footer {
     display: none;
 }
 
+.result_loading {
+    margin-top: 65px;
+}
+
 .result_loading img {
     /* position: absolute;
     top: 20px;
