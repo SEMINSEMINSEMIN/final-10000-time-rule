@@ -28,9 +28,13 @@ shareBtn.addEventListener('click', (event) => {
         window.navigator.share({
             title: '1만 시간의 법칙',
             text: 'Hello World',
-            url: 'https://shinsangeun.github.io',
+            url: 'https://seminseminsemin.github.io/final-10000-time-rule/',
         })
           .then(() => console.log('공유 성공'))
           .catch((error) => console.log('공유 실패', error));
       }
+    
+      navigator.clipboard.readText().then((text) => {
+        console.log(text);
+      })
 })
