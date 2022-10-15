@@ -34,7 +34,15 @@ shareBtn.addEventListener('click', (event) => {
           .catch((error) => console.log('공유 실패', error));
       }
     
-      navigator.clipboard.readText().then((text) => {
-        console.log(text);
-      })
+    const url = window.document.location.href;
+    copyToClipboard(url);
 })
+
+function copyToClipboard(val) {
+    let dummy = document.createElement('textarea')
+    document.body.appendChild(dummy)
+    dummy.value = val
+    dummy.select()
+    document.execCommand('copy')
+    document.body.removeChild(dummy)
+  }
