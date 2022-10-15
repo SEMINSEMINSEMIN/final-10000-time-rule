@@ -20,6 +20,7 @@ cptBtn.addEventListener('click', (event) => {
         specialtyResStr.textContent = inputObj['specialty'];
         practiceHourResStr.textContent = calRes;
 
+        resultArea.classList.remove('show');
         loadingArea.classList.remove('hide');
 
         setTimeout(() => {
