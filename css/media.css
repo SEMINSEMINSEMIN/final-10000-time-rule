@@ -170,3 +170,10 @@
         left: -18px;
     }
 }
+
+@media (min-width: 451px) and (max-width: 767px) {
+    .result_loading img {
+        width: 70px;
+        height: 70px;
+    }
+}

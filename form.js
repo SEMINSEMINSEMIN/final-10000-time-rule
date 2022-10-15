@@ -31,9 +31,9 @@ cptBtn.addEventListener('click', (event) => {
 });
 
 const modalShowBtn = resultArea.querySelector("#modalShowBtn");
-const modal = document.querySelector(".modal");
+const modalCont = document.querySelector(".modal-container");
 modalShowBtn.addEventListener('click', (event) => {
-    modal.classList.add('show');
+    modalCont.classList.remove('hide');
 })
 
 const shareBtn = resultArea.querySelector("#shareBtn");

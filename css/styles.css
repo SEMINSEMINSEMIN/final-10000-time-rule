@@ -321,12 +321,20 @@ footer {
 /*
 ///모달///
 */
+.modal-container {
+    /* this is how we cover the entire page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .modal {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    display: none;
     background-color: white;
     width: calc(330 / 360 * 100%);
     max-width: 800px;
