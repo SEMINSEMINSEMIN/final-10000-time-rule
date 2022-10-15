@@ -35,8 +35,8 @@ const modalCont = document.querySelector(".modal-container");
 const modal = document.querySelector(".modal");
 
 let clickEvent = (function() {
-    if ('ontouchstart' in document.documentElement === true) {
-      return 'touchstart';
+    if ('ontouchend' in document.documentElement === true) {
+      return 'touchend';
     } else {
       return 'click';
     }
