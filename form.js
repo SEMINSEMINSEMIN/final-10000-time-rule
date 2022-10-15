@@ -8,6 +8,7 @@ const practiceHourResStr = resultArea.querySelector('#cmptResult');
 const inputObj = {};
 let calRes;
 cptBtn.addEventListener('click', (event) => {
+    event.preventDefault();
     const num = parseInt(practiceHourStr.value, 10)
     if (specialtyStr.value === '' || isNaN(num) || num === 0 || num < 0){
         window.alert('입력값을 제대로 입력하세요');
