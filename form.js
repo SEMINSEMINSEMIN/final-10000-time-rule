@@ -13,4 +13,5 @@ cptBtn.addEventListener('click', (event) => {
     calRes = Math.ceil(10000 / inputObj['practiceHour']);
     specialtyResStr.textContent = inputObj['specialty'];
     practiceHourResStr.textContent = calRes;
+    resultArea.classList.add('show');
 });

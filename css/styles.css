@@ -61,6 +61,7 @@ html {
 ///body///
 */
 body {
+    position: relative;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: 'GmarketSansMedium';
@@ -242,6 +243,7 @@ button {
 ///계산 결과 영역///
 */
 .computation-result {
+    display: none;
     margin-top: 65px;
 }
 
@@ -307,6 +309,11 @@ footer {
 ///모달///
 */
 .modal {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
     background-color: white;
     width: calc(330 / 360 * 100%);
     max-width: 800px;
@@ -345,4 +352,8 @@ footer {
 .go-btn {
     border-radius: 13px;
     padding: 19px 45px 17px;
+}
+
+.show {
+    display: block;
 }
