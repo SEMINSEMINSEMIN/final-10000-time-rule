@@ -32,11 +32,21 @@ cptBtn.addEventListener('click', (event) => {
 
 const modalShowBtn = resultArea.querySelector("#modalShowBtn");
 const modalCont = document.querySelector(".modal-container");
+
+let clickEvent = (function() {
+    if ('ontouchmove' in document.documentElement === true) {
+      return 'touchmove';
+    } else {
+      return 'click';
+    }
+  })();
+
+
 modalShowBtn.addEventListener('click', (event) => {
     modalCont.classList.remove('hide');
 })
 
-window.addEventListener('click', (e) => {
+window.addEventListener(clickEvent, (e) => {
     e.target === modalCont ? modalCont.classList.add('hide') : false;
 })
 
