@@ -32,10 +32,11 @@ cptBtn.addEventListener('click', (event) => {
 
 const modalShowBtn = resultArea.querySelector("#modalShowBtn");
 const modalCont = document.querySelector(".modal-container");
+const modal = document.querySelector(".modal");
 
 let clickEvent = (function() {
-    if ('ontouchmove' in document.documentElement === true) {
-      return 'touchmove';
+    if ('ontouchstart' in document.documentElement === true) {
+      return 'touchstart';
     } else {
       return 'click';
     }
