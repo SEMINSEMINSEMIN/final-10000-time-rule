@@ -58,6 +58,19 @@ html {
 }
 
 /*
+///animation///
+*/
+@keyframes circleRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
 ///body///
 */
 body {
@@ -360,4 +373,18 @@ footer {
 
 .hide {
     display: none;
+}
+
+.result_loading {
+    /* display: none; */
+}
+
+.result_loading img {
+    width: 100px;
+    height: 100px;
+    transform-origin: center;
+    animation-name: circleRotate;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
