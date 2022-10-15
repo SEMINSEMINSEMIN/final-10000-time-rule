@@ -9,7 +9,7 @@ const inputObj = {};
 let calRes;
 cptBtn.addEventListener('click', (event) => {
     if (specialtyStr.value === '' || isNaN(parseInt(practiceHourStr.value, 10))){
-        window.alert('입력값을 모두 입력하세요');
+        window.alert('입력값을 제대로 입력하세요');
     } else {
         inputObj['specialty'] = specialtyStr.value;
         inputObj['practiceHour'] = parseInt(practiceHourStr.value);
@@ -49,5 +49,5 @@ function copyToClipboard(val) {
     dummy.select();
     document.execCommand('copy');
     document.body.removeChild(dummy);
-    window.alert('url이 복사되었습니다.')
+    window.alert('url이 복사되었습니다.');
   }
