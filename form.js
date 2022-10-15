@@ -39,10 +39,11 @@ shareBtn.addEventListener('click', (event) => {
 })
 
 function copyToClipboard(val) {
-    let dummy = document.createElement('textarea')
-    document.body.appendChild(dummy)
-    dummy.value = val
-    dummy.select()
-    document.execCommand('copy')
-    document.body.removeChild(dummy)
+    let dummy = document.createElement('textarea');
+    document.body.appendChild(dummy);
+    dummy.value = val;
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+    window.alert('url이 복사되었습니다.')
   }
